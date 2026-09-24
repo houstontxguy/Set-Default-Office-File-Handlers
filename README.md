@@ -1,8 +1,8 @@
 # Set Office Default Handlers (macOS 26.4+ / 26.7 / 27)
 
-## Why the old package stopped working
+## Why the old method utilizing utiutil stopped working
 
-The old `Set Outlook as Default Mail.pkg` used `utiluti`, which calls the public
+Previous methods used `utiluti`, which calls the public
 LaunchServices API. **Starting in macOS 26.4, macOS prompts the user for confirmation
 on every default-app change** — not just the default browser as before. The user can
 click "Keep", or ignore the dialog entirely, which stalls the script.
