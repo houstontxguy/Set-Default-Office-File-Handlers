@@ -62,10 +62,3 @@ in `/Applications`, falling back to Spotlight).
 - Directly editing `com.apple.launchservices.secure.plist` is not a documented Apple
   interface. It is the only option Apple currently leaves for silent management; file
   feedback via AppleSeed for IT asking for a real MDM payload.
-
-```sh
-sudo ./setDefaultHandlers.sh
-./checkDefaultHandlers.sh
-```
-
-Then log out and back in, and verify `mailto:` links open Outlook.
